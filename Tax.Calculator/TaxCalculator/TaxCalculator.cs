@@ -82,7 +82,7 @@ namespace Tax.Calculator
 
             stopwatch.Start();
 
-            if (isValidatedDecimal)
+            if (isValidatedDecimal && grossSalary > GlobalConstants.DEFAULT_VALUE)
             {
                 if (GlobalConstants.MINIMUM_TAXABLE_INCOME >= grossSalary)
                 {
